@@ -212,6 +212,11 @@ img {
   fill: #ffffff;
 }
 
+.mob-menu .soc-list {
+  gap: 40px;
+  justify-content: flex-start;
+}
+
 .mob-menu .nav {
   margin-bottom: auto;
 }
@@ -278,7 +283,7 @@ img {
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  max-width: 1440px;
+  max-width: 320px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
@@ -322,7 +327,7 @@ img {
 
 /* List Name Container */
 .list-name-container {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .container-list {
@@ -356,6 +361,7 @@ img {
 
 .list-paragraph,
 .paragraph-container {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -503,7 +509,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-bottom: 72px;
 }
 
 .footer-item {
@@ -530,6 +535,10 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.footer-text {
+  margin-bottom: 72px;
 }
 
 .social-media-container {
@@ -601,7 +610,7 @@ img {
 .footer-email {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -807,6 +816,8 @@ img {
 }
 
 .modal-privacy-text {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -820,7 +831,7 @@ img {
   color: #4d5ae5;
 }
 
-.modal-privacy-text span {
+.check-span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -831,10 +842,7 @@ img {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
-}
-
-.check-span {
-  margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .terms-container {
@@ -887,6 +895,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/Dark-bg-tab.jpg);
+    max-width: 768px;
   }
 
   .title {
@@ -897,6 +906,7 @@ img {
     text-align: center;
     color: #fff;
     max-width: 496px;
+    margin-bottom: 36px;
   }
 
   .container {
@@ -969,6 +979,10 @@ img {
 
   .footer-form {
     align-items: baseline;
+  }
+
+  .footer-email {
+    width: 264px;
   }
 
   .modal {
@@ -1051,6 +1065,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpg);
+    max-width: 1440px;
   }
 
   .container {
@@ -1061,6 +1076,7 @@ img {
   .title {
     font-size: 56px;
     line-height: 1.07;
+    margin-bottom: 48px;
   }
 
   .list-item {
@@ -1074,11 +1090,14 @@ img {
   }
 
   .list-name-container {
-    padding: 0;
+    padding: 120px 0;
+  }
+
+  .list-paragraph {
+    font-weight: 400;
   }
 
   .container-list {
-    padding: 120px 0;
     display: flex;
     gap: 24px;
   }
@@ -1130,9 +1149,6 @@ img {
   .footer-text {
     display: block;
     margin-right: 120px;
-  }
-
-  .footer-paragraph {
     margin-bottom: 0;
   }
 
